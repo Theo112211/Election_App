@@ -1,72 +1,27 @@
 import React, { useState } from "react";
-import Input from "../../components/input";
 import Button from "../../components/input/button";
+import Input from "../../components/input";
 
-const AddVoter = () => {
-  const [state, setState] = useState({
-    studentId: "",
-    studentName: "",
-    email: "",
-    telephone: "",
-    password: "",
-  });
+const AddPosition = () => {
+    const [state, setState] = useState({ 
+        position:"",
+
+    })
+
 
   return (
-    <div id="formSection">
-      <h1> Add Voter</h1>
+    <div id="formSection" >
+      
       <form id="form">
+      <h1> Add Position</h1>
         <Input
-          name="studentId"
-          id="studentId"
+          name="position"
+          id="position"
           type="text"
-          title="Student Id"
+          title="Position"
           onChange={(e) => {
             setState((prevState) => {
               return { prevState, studentId: e.target.value };
-            });
-          }}
-        />
-        <Input
-          name="studentName"
-          id="studentName"
-          type="text"
-          title="Student Name"
-          onChange={(e) => {
-            setState((prevState) => {
-              return { prevState, studentName: e.target.value };
-            });
-          }}
-        />
-        <Input
-          name="email"
-          id="email"
-          type="email"
-          title="Email"
-          onChange={(e) => {
-            setState((prevState) => {
-              return { prevState, email: e.target.value };
-            });
-          }}
-        />
-        <Input
-          name="telephone"
-          id="telephone"
-          type="tell"
-          title="Telephone"
-          onChange={(e) => {
-            setState((prevState) => {
-              return { prevState, telephone: e.target.value };
-            });
-          }}
-        />
-        <Input
-          name="password"
-          id="password"
-          type="password"
-          title="Password"
-          onChange={(e) => {
-            setState((prevState) => {
-              return { prevState, password: e.target.value };
             });
           }}
         />
@@ -76,4 +31,4 @@ const AddVoter = () => {
   );
 };
 
-export default AddVoter;
+export default AddPosition;

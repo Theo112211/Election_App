@@ -1,8 +1,11 @@
 import React from 'react'
+import { Outlet } from 'react-router-dom'
 
 const Position = () => {
   return (
-    <div>Position</div>
+    <div>
+        <Outlet />
+    </div>
   )
 }
 
