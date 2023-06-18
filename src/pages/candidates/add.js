@@ -1,7 +1,9 @@
 import React, { useState } from 'react'
+import Input from '../../components/input'
+import Button from '../../components/input/button'
 
 const Addcandidates = () => {
-    const [state,setState]=useStatetate({candidateId:"", candidateName:"", email:"", telephone:"",  })
+    const [state,setState]=useState({candidateId:"", candidateName:"", email:"", telephone:"",  })
 
   return (
     <div>
