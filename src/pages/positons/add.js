@@ -18,6 +18,7 @@ const AddPosition = () => {
           name="position"
           id="position"
           type="text"
+          placeholder="What position are you an aspirant of?"
           title="Position"
           onChange={(e) => {
             setState((prevState) => {

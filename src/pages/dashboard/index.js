@@ -3,7 +3,8 @@ import React from 'react'
 const Dashboard = () => {
   return (
     <div>
-      <h3>Dashboard</h3>
+      <h1 id='heading'>Aamusted Election Portal</h1>
+      <h3 id='dashboard'>Dashboard</h3>
     </div>
   )
 }
